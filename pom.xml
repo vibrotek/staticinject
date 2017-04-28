@@ -4,12 +4,16 @@
 
     <groupId>ru.vibrotek</groupId>
     <artifactId>staticinject</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>StaticInject</name>
     <description>The library generates a special code to load and use Spring Beans</description>
     <url>https://github.com/vibrotek/staticinject</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <licenses>
         <license>
@@ -23,7 +27,7 @@
         <url>https://github.com/vibrotek/staticinject</url>
         <connection>scm:git:https://github.com/vibrotek/staticinject.git</connection>
         <developerConnection>scm:git:https://github.com/vibrotek/staticinject.git</developerConnection>
-      <tag>release-1.1</tag>
+      <tag>staticinject-1.1</tag>
   </scm>
 
     <developers>
@@ -76,17 +80,6 @@
             </activation>
             <build>
                 <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-release-plugin</artifactId>
-                        <version>2.5.3</version>
-                        <configuration>
-                            <autoVersionSubmodules>true</autoVersionSubmodules>
-                            <useReleaseProfile>false</useReleaseProfile>
-                            <releaseProfiles>release</releaseProfiles>
-                            <goals>deploy nexus-staging:release</goals>
-                        </configuration>
-                    </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
