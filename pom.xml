@@ -23,7 +23,8 @@
         <url>https://github.com/vibrotek/staticinject</url>
         <connection>scm:git:https://github.com/vibrotek/staticinject.git</connection>
         <developerConnection>scm:git:https://github.com/vibrotek/staticinject.git</developerConnection>
-    </scm>
+      <tag>release-1.1</tag>
+  </scm>
 
     <developers>
         <developer>
@@ -83,7 +84,6 @@
                             <autoVersionSubmodules>true</autoVersionSubmodules>
                             <useReleaseProfile>false</useReleaseProfile>
                             <releaseProfiles>release</releaseProfiles>
-                            <goals>deploy</goals>
                             <goals>deploy nexus-staging:release</goals>
                         </configuration>
                     </plugin>
